@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="12dp"
+    android:background="@color/colorAccent"
+    tools:context="com.example.codetribe.health4life.MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/health"
+        android:background="@drawable/image"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="password"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2545A8"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/textView"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textColor="#2545A8"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="username\\ email address"
+        android:ems="10"
+        android:textColor="#2545A8"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/editText"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:textSize="30dp"
+        android:textColor="#2545A8"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Not a member? Sign up now."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18dp"
+        android:textColor="#2545A8"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+
+</RelativeLayout>
